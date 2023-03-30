@@ -1,0 +1,39 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  background-color: #ecf2ff;
+  border: none;
+  color: #060047;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #060047;
+  color: #ecf2ff;
+}
+
+.input {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid #060047;
+  background-color: #5e71bc;
+  color: #060047;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom: 2px dotted #060047;
+}
+
+.input::placeholder {
+  color: #ecf2ff;
+}
