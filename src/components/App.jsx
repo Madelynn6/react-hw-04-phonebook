@@ -27,7 +27,7 @@ class App extends Component {
       el => el.name.toLowerCase() === inputValue.toLowerCase()
     );
     if (ifNameExist) {
-      alert(`${inputValue} is already in contacts.`);
+      alert(`${inputValue} is already in contacts. :/`);
     } else {
       this.setState(state => ({
         contacts: [
