@@ -54,6 +54,7 @@ const App = () => {
     if (parsedContacts) {
       setContacts(parsedContacts);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
