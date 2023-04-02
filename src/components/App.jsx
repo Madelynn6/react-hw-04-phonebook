@@ -48,13 +48,12 @@ const App = () => {
     setContacts(oldState => oldState.filter(el => el.id !== x));
   };
 
-  const savedContacts = localStorage.getItem('contacts');
   useEffect(() => {
+    const savedContacts = localStorage.getItem('contacts');
     const parsedContacts = JSON.parse(savedContacts);
     if (parsedContacts) {
       setContacts(parsedContacts);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
